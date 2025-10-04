@@ -1,6 +1,4 @@
 // src/api/products.js
-
-// Mock product list (frontend-only)
 export const products = [
   {
     id: 1,
@@ -64,7 +62,7 @@ export const products = [
 export function getProducts() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(products); // ✅ return array, not object
+      resolve(products); 
     }, 500);
   });
 }
